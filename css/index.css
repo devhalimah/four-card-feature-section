@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+body{
+	font-family: 'Poppins', sans-serif;
+	background: hsl(0, 0%, 98%);
+	color: hsl(229, 6%, 66%);
+	font-weight: 200;
+	font-size: 15px;
+	position: relative;
+	word-wrap: break-word;
+}
+main{
+	margin: 3.5% auto;
+	top: 50%;
+	left: 20%;
+	right: 20%;
+}
+header{
+	text-align: center;
+}
+header .header-title{
+	font-weight: 400;
+	line-height: 1.5;
+}
+h2{
+	font-weight: 600;
+	color: hsl(234, 12%, 34%);
+	font-size: 25px;
+}
+.container{
+	display: flex;
+	margin-left: 12.5%;
+	width: 80%;
+}
+section{
+	background: hsl(0, 0%, 100%);
+	padding: 15px;
+	margin-top: 18px;
+	text-align: left;
+	border-radius: 5px;
+	box-shadow: 
+	0 4px 8px 0 rgba(0, 0, 0, 0.1), 
+	0 6px 20px white;
+	overflow: hidden;
+}
+section h2{
+	font-size: 18px;
+}
+section .icon{
+	float: right;
+	margin: 20px 10px;
+}
+.section-1{
+	border-top: 3px solid hsl(180, 62%, 55%);
+}
+.section-2{
+	border-top: 3px solid hsl(0, 78%, 62%);
+}
+.section-3{
+	border-top: 3px solid hsl(34, 97%, 64%);
+}
+.section-4{
+	border-top: 3px solid hsl(212, 86%, 64%);
+	margin-bottom: 20px;
+}
+.col-1{
+	flex-direction: row;
+	margin-right: 18px;
+	margin-top: 120px;
+	width: 100%;
+}
+.col-2{
+	flex-direction: column;
+	margin-bottom: 50px;
+	width: 100%;
+}
+.col-3{
+	flex-direction: row;
+	margin-left: 18px;
+	margin-top: 120px;
+	margin-right: 50px;
+	width: 100%;
+}
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 600px) and (orientation: portrait){
+main{
+	margin: 8% auto;
+}
+.container{
+	display: flex;
+	flex-direction: column;
+	margin-left: 18%;
+	width: 65%;
+}
+.col-1,.col-2,.col-3{
+	flex-direction: row;
+	margin: 0px;
+}
+}
